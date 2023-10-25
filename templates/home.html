@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
-    <div class="header">
-        <div class="headertop">
-            Universo Star Wars
-            <ul>
-                <li>
-                    <a href="#info">Informações</a>
-                </li>
-                <li>
-                    <a href="#feedback">Frases</a>
-                </li>
-                <li>
-                    <a href="#calltoaction">Entre</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-primary bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
+    <div class="header">
         <div class="headercontent">
             <div class="content">
                 <div class="title">
@@ -33,65 +65,78 @@
                     Esse site é uma promoção não paga para o USW 2 <br>
                     Observe as traquinagens dos figurantes e junte-se à ação!
                 </div>
-                <button>Entra aí que sai em 2032</button>
+                <button class="btn btn-primary">Entra aí que sai em 2032</button>
             </div>
-            <img src="https://cdn.discordapp.com/attachments/490724671143149568/528297252289118269/unknown.png" alt="">
+            <img src="https://cdn.discordapp.com/attachments/490724671143149568/528297252289118269/unknown.png"
+                class="cape" alt="">
         </div>
     </div>
     <div class="information" id="info">
-        <div class="text">
-            Pérolas do idiot-logs 
-        </div>
-        <div class="infocards">
-            <div class="card">
-                <div class="imgcontainer">
-                    <img src="https://media.discordapp.net/attachments/555819078187614239/668259717763563530/unknown.png?width=400&height=413" alt="">
+        <div class="row row-cols-1 row-cols-md-6 g-2">
+            <div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/555819078187614239/668259717763563530/unknown.png?width=400&height=413"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Grã Mestra Satele e seus métodos de guerra</h5>
+                        <p class="card-text">Nem sempre funcionava.</p>
+                    </div>
                 </div>
-                Grã Mestra Satele e seus métodos de guerra
             </div>
-            <div class="card">
-                <div class="imgcontainer">
-                    <img src="https://media.discordapp.net/attachments/565702413890355220/946206503319253082/unknown.png?width=450&height=413" alt="">
+            <div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/565702413890355220/946206503319253082/unknown.png?width=450&height=413"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wlibean e seu dublê</h5>
+                        <p class="card-text">Nenhum dos soldados nem os sensitivos conseguiam diferenciá-los.</p>
+                    </div>
                 </div>
-                Wlibean e seu dublê profissional
             </div>
-            <div class="card">
-                <div class="imgcontainer">
-                    <img src="https://media.discordapp.net/attachments/490724671143149568/565355903147180032/unknown.png?width=411&height=413" alt="">
+            <div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/490724671143149568/565355903147180032/unknown.png?width=411&height=413" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Truco Imperial</h5>
+                        <p class="card-text">Truco entre os sensitivos Imperiais durante processo seletivo da Ordem Sith.</p>
+                    </div>
                 </div>
-                Truco entre os sensitivos de alto nível do Império, durante treino Sith
             </div>
-            <div class="card">
-                <div class="imgcontainer">
-                    <img src="https://media.discordapp.net/attachments/565927245370097665/574353178787577886/unknown.png?width=450&height=413" alt="">
+            <div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/565927245370097665/574353178787577886/unknown.png?width=450&height=413" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">E8 negligente</h5>
+                        <p class="card-text">Coronel Imperial rudemente recusando suprimentos da Ira do Imperador</p>
+                    </div>
                 </div>
-                Coronel Imperial rudemente recusando suprimentos da Ira do Imperador
             </div>
-            <div class="card">
-                <div class="imgcontainer">
-                    <img src="https://media.discordapp.net/attachments/490724671143149568/559517782190850050/x8wqtuKEn36zAAAAABJRU5ErkJggg.png?width=450&height=413" alt="">
+            <div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/490724671143149568/559517782190850050/x8wqtuKEn36zAAAAABJRU5ErkJggg.png?width=450&height=413" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Grande Moff Imperial pego no flagra em web-yoga</h5>
+                        <p class="card-text">que?</p>
+                    </div>
                 </div>
-                Grande Moff Imperial pego no flagra em web-yoga
             </div>
-            <div class="card">
-                <div class="imgcontainer">
+            <div>
+                <div class="card">
                     <img src="https://media.discordapp.net/attachments/514238562212904990/676586888575844374/unknown.png?width=450&height=413" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Corporal antitrampo</h5>
+                        <p class="card-text"></p>
+                    </div>
                 </div>
-                Corporal Rickson retornando opiniões sobre seu trabalho excitante
             </div>
-            <div class="card">
-                <div class="imgcontainer">
-                    <img src="https://images-ext-2.discordapp.net/external/ofbLLBQO1MxDeT5sJz5RXSuCXDphWVZTKohO99nzd7Q/https/images-ext-2.discordapp.net/external/4wvIs4D_ZQoW8JOfcni1KmleLVmRG9FQS2GlzqJsiKk/%253Fwidth%253D713%2526height%253D445/https/media.discordapp.net/attachments/555819078187614239/671818646317695028/unknown.png?width=662&height=413" alt="">
-                </div>
-                Revista padrão republicana
-            </div>
+            
         </div>
     </div>
     <div class="feedback" id="feedback">
         <div class="quote">
             <div class="text">
                 <em>"eu irei ensinar vocês as 3 melhores dicas da suas vidas.<br>
-                1-não seja o alpha"</em>
+                    1-não seja o alpha"</em>
                 <!-- "!alert adri você é uma jamanta - vermete, Imperador Sith" -->
                 <!-- "Nao é demote, é free rank pra baixo - Wlibean, Grande Moff" -->
                 <!--    Com minhas novas habilidades aprimoradas, com a Mira.. Poderei 
@@ -99,7 +144,7 @@
                         - E3 Imperial anônimo -->
             </div>
             <div class="quoter">
-                - zeropaladino, Darth Baras 
+                - zeropaladino, Darth Baras
             </div>
         </div>
     </div>
@@ -113,4 +158,5 @@
         </div>
     </div>
 </body>
+
 </html>
