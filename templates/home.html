@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>USW landing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,37 +25,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#historia">História</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#info">Pérolas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselOne">Frases</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
-    <div class="header">
+    <div class="header" id="header">
         <div class="headercontent">
             <div class="content">
                 <div class="title">
@@ -64,15 +49,23 @@
                 <div class="text">
                     Esse site é uma promoção não paga para o USW 2 <br>
                     Observe as traquinagens dos figurantes e junte-se à ação!
+                    (Lança em 20██)
                 </div>
-                <button class="btn btn-primary">Entra aí que sai em 2032</button>
+                <button class="btn btn-primary" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Quero entrar</button>
             </div>
             <img src="https://cdn.discordapp.com/attachments/490724671143149568/528297252289118269/unknown.png"
                 class="cape" alt="">
         </div>
     </div>
+    <div class="historia" id="historia">
+        <h3 class="text text-center">O que foi o USW?</h3>
+        <p class="lead">O <abbr title="Universo Star Wars">USW</abbr> foi uma comunidade de <abbr title="Interpretação de papéis">roleplay</abbr> no Roblox tematizada em volta da franquia Star Wars. Em seu pico, o jogo teve 60 jogadores simultâneamente interpretando uma variedade de cargos, sendo eles militares, oficiais estratégicos, políticos e combatentes corpo-a-corpo.</p>
+        <p>A comunidade foi criada no início de 2018 com apenas uma das facções principais presentes, o Império, tinha apenas um desenvolvedor e 10 membros no total. No início de 2019, o primeiro líder republicano eleito, <em>RicoFox</em>, criou o primeiro servidor dedicado aos republicanos, que anteriormente compartilhavam um servidor do <em>Discord</em> com os Imperiais, e no final de 2019, a República ultrapassou a marca de 200 membros totais. No mesmo ano, houveram diversos eventos de ataques aos mapas das facções, com dezenas de participantes de ambos os times.</p>
+        <p>Em Abril de 2020, a comunidade foi declarada encerrada pelos donos, devido à circunstâncias externas que os impediam de dedicar seu tempo ao desenvolvimento e administração do jogo.</p>
+    </div>
     <div class="information" id="info">
-        <div class="row row-cols-1 row-cols-md-4 g-2">
+        <div class="text">Pérolas do idiot-logs</div>
+        <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center">
             <div>
                 <div class="card h-100">
                     <img src="https://media.discordapp.net/attachments/555819078187614239/668259717763563530/unknown.png?width=400&height=413"
@@ -144,44 +137,103 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <card class="card h-100">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow"><span class="placeholder col-6"></span></h5>
+                        <p class="card-text placeholder-glow"><span class="placeholder col-7"></span><span class="placeholder col-4"></span><span class="placeholder col-4"></span><span class="placeholder col-6"></span><span class="placeholder col-8"></span></p>
+                    </div>
+                </card>
+            </div>
+            </div>
         </div>
     </div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <div class="quotetext">
+                    <div class="content">
+                        <em>
+                            "eu irei ensinar vocês as 3 melhores dicas da suas vidas.<br>
+                            1-não seja o alpha"
+                        </em>
+                        <div class="quoter">
+                            - zeropaladino, Darth Baras
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <div class="quotetext">
+                    <div class="content">
+                        <em>
+                            "Nao é demote, é free rank pra baixo"
+                        </em>
+                        <div class="quoter">
+                            - Wlibean, Grande Moff
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <div class="quotetext">
+                    <div class="content">
+                        <em>
+                            "Com minhas novas habilidades aprimoradas, com a Mira.. Poderei facilmente matar o dobro do
+                            que eu matava antes de Republicanos."
+                        </em>
+                        <div class="quoter">
+                            - E3 Imperial anônimo
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="quotetext">
+                    <div class="content">
+                        <em>
+                            "passaporte<br>de carro"
+                        </em>
+                        <div class="quoter">
+                            - GiovanniMarques13, Senador
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="quotetext">
+                    <div class="content">
+                        <em>
+                            "Eu so tava amarrando<br>meu sapato<br>oxi"
+                        </em>
+                        <div class="quoter">
+                            - RicoFox, após se ajoelhar para o comandante errado
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="feedback" id="feedback">
-        <div class="quote">
-            <div class="text">
-                <em>"eu irei ensinar vocês as 3 melhores dicas da suas vidas.<br>
-                    1-não seja o alpha"</em>
-                <!-- "!alert adri você é uma jamanta - vermete, Imperador Sith" -->
-                <!-- "Nao é demote, é free rank pra baixo - Wlibean, Grande Moff" -->
-                <!--    Com minhas novas habilidades aprimoradas, com a Mira.. Poderei 
-                        facilmente matar o dobro do que eu matava antes de Republicanos. 
-                        - E3 Imperial anônimo -->
-            </div>
-            <div class="quoter">
-                - zeropaladino, Darth Baras
-            </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <div class="calltoaction" id="calltoaction">
         <div class="container">
             <div class="txt">
-                <b>Tá na hora da ação</b><br>
-                entra no USW 2 e vai quebrar Republicano
+                <b>Nós precisamos de você!</b><br>
             </div>
-            <button>Ok quero entrar então</button>
+            <button class="btn btn-primary" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Quero entrar</button>
         </div>
     </div>
 </body>
