@@ -91,15 +91,25 @@ ul {
     background-color: #E5E7EB;
 }
 
-.quote .text {
+.quotetext {
     width: 55vw;
+    height: 200px;
+    margin: auto auto;
     text-align: center;
     color: #1F2937;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
-.quote .quoter {
+.content {
+    margin: auto 0;
+}
+
+.quotetext .quoter {
     font-weight: bold;
     display: flex;
     justify-content: end;
